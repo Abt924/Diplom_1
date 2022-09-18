@@ -86,7 +86,7 @@ public class BurgerTest {
         burger.addIngredient(sauce);
         burger.addIngredient(cutlet);
 
-        assertEquals(burger.getPrice(), 810.5f, 0);
+        assertEquals("Price calculated not so as expected", burger.getPrice(), 810.5f, 0);
     }
 
     @Test

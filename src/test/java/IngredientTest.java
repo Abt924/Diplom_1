@@ -22,15 +22,17 @@ public class IngredientTest {
 
     @Parameterized.Parameters(name = "test data type {0} name {1} price {2}")
     public static Object[][] getData() {
-        return new Object[][]{{IngredientType.SAUCE, "hot sauce", 100}, {IngredientType.FILLING, "cutlet", 300.10f}, // передали тестовые данные
-        };
+        return new Object[][]{
+                {IngredientType.SAUCE, "hot sauce", 100},
+                {IngredientType.FILLING, "cutlet", 300},
+                {IngredientType.FILLING, "cutlet", 300.10f},
+        };// передали тестовые данные
     }
 
     @Test
     public void createIngredient() {
         Ingredient ingredient = new Ingredient(expType, expName, expPrice);
         assertNotNull("new Ingredient instance should be created but Null", ingredient);
-
     }
 
     @Test

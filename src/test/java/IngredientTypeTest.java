@@ -16,4 +16,10 @@ public class IngredientTypeTest {
         assertEquals("type FILLING should exist", "FILLING", IngredientType.FILLING.toString());
     }
 
+    @Test
+    public void only2TypeExist() {
+        assertEquals("2 type  should exist only", 2, IngredientType.values().length);
+    }
+
+
 }
