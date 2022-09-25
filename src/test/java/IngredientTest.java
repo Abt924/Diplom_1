@@ -20,13 +20,9 @@ public class IngredientTest {
         this.expPrice = price;
     }
 
-    @Parameterized.Parameters(name = "test data type {0} name {1} price {2}")
+    @Parameterized.Parameters(name = "Тестовые данные: {0} {1} {2}")
     public static Object[][] getData() {
-        return new Object[][]{
-                {IngredientType.SAUCE, "hot sauce", 100},
-                {IngredientType.FILLING, "cutlet", 300},
-                {IngredientType.FILLING, "cutlet", 300.10f},
-        };// передали тестовые данные
+        return new Object[][]{{IngredientType.SAUCE, "hot sauce", 100}, {IngredientType.FILLING, "cutlet", 300}, {IngredientType.FILLING, "cutlet", 300.10f},};// передали тестовые данные
     }
 
     @Test

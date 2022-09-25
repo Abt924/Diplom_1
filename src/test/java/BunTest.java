@@ -1,7 +1,5 @@
-import org.junit.Before;
-import praktikum.Bun;
-
 import org.junit.Test;
+import praktikum.Bun;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -31,6 +29,4 @@ public class BunTest {
 
         assertEquals("Price should be as in constructor args", expectedPrice, bun.getPrice(), 0);
     }
-
-
 }
